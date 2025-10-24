@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d7a1f9, #f8b5c3, #f9d4a7, #a8f9c1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.card.show {
+    animation: glow 0.8s ease;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #ff00ff; transform: scale(1); }
+    50% { box-shadow: 0 0 25px #00ffcc; transform: scale(1.05); }
+    100% { box-shadow: 0 0 10px #ff00ff; transform: scale(1); }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.category {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.category-picante {
+    background-color: #ff6b81;
+    color: white;
+}
+
+.category-engracada {
+    background-color: #f9d56e;
+    color: black;
+}
+
+.category-amigas {
+    background-color: #a8f9c1;
+    color: black;
+}
